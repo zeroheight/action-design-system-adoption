@@ -1,0 +1,17 @@
+name: 'Design System Adoption'
+description: 'Analyze and update your design system adoption in zeroheight'
+branding:
+  icon: 'bar-chart'
+  color: 'green'
+
+jobs:
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Analyze and update
+      with:
+        node-version: "20"
+      env:
+        ZEROHEIGHT_CLIENT_ID: "${{ secrets.ZEROHEIGHT_CLIENT_ID }}"
+        ZEROHEIGHT_ACCESS_TOKEN: "${{ secrets.ZEROHEIGHT_ACCESS_TOKEN }}"
+      run: npx @zeroheight/adoption-cli analyze --interactive false --repo-name ${{ github.event.repository.name }}
