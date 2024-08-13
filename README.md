@@ -32,7 +32,7 @@
 5. Once complete, add the following step to your existing GitHub Action workflow file:
    ```yaml
       - name: Analyze design system adoption data
-        uses: zh-ski/action-design-system-adoption@main
+        uses: zh-ski/action-design-system-adoption@v1
         env:
           ZEROHEIGHT_CLIENT_ID: "${{ secrets.ZEROHEIGHT_CLIENT_ID }}"
           ZEROHEIGHT_ACCESS_TOKEN: "${{ secrets.ZEROHEIGHT_ACCESS_TOKEN }}"
