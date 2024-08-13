@@ -6,7 +6,7 @@ branding:
   color: 'purple'
 
 runs:
-  using: "composite"
+  using: "node20"
   steps:
     - name: Checkout code
       uses: actions/checkout@v3
