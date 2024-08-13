@@ -16,3 +16,4 @@ runs:
       uses: actions/checkout@v3
     - name: Analyze and update
       run: npx @zeroheight/adoption-cli analyze --interactive false --repo-name ${{ github.event.repository.name }}
+      shell: bash
