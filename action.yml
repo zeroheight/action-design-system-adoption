@@ -4,6 +4,9 @@ branding:
   icon: 'bar-chart'
   color: 'green'
 
+runs:
+  using: node20
+
 jobs:
   analyze:
     runs-on: ubuntu-latest
