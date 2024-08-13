@@ -10,8 +10,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Analyze and update
-        with:
-          node-version: "20"
         env:
           ZEROHEIGHT_CLIENT_ID: "${{ secrets.ZEROHEIGHT_CLIENT_ID }}"
           ZEROHEIGHT_ACCESS_TOKEN: "${{ secrets.ZEROHEIGHT_ACCESS_TOKEN }}"
