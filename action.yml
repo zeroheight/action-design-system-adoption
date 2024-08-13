@@ -15,5 +15,3 @@ runs:
         ZEROHEIGHT_CLIENT_ID: '${{ secrets.ZEROHEIGHT_CLIENT_ID }}'
         ZEROHEIGHT_ACCESS_TOKEN: '${{ secrets.ZEROHEIGHT_ACCESS_TOKEN }}'
       run: npx @zeroheight/adoption-cli analyze --interactive false --repo-name ${{ github.event.repository.name }}
-      with:
-        node-version: '20'
