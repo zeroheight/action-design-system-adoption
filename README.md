@@ -40,4 +40,4 @@
    We recommend adding it as part of your post-deployment workflows. If you're new to workflows and actions check out [GitHub's Actions documentation](https://docs.github.com/en/actions) for more info.
 6. Save your changes, trigger your action, and check in zeroheight to see design system usage data come in 🎉
 
-**Check out [our example React application](https://github.com/zeroheight/example-airorange-app) for reference and [it's containing GitHub Action file](https://github.com/zeroheight/example-airorange-app/blob/master/.github/workflows/deploy.yaml).**
+**Check out [our example React application](https://github.com/zeroheight-demos/example-airorange-app) for reference and [it's containing GitHub Action file](https://github.com/zeroheight/example-airorange-app/blob/master/.github/workflows/deploy.yaml).**
