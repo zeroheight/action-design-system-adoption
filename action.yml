@@ -5,6 +5,20 @@ branding:
   icon: 'bar-chart'
   color: 'purple'
 
+inputs:
+  command:
+    description: 'The command to run'
+    required: true
+    type: choice
+    options:
+      - 'analyze'
+      - 'track-package'
+      - 'monitor-repo'
+  arguments:
+    description: 'Additional arguments to pass to the command'
+    required: false
+    type: string
+
 runs:
   using: 'composite'
   steps:
@@ -12,8 +26,21 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version: 20
+
     - name: Checkout code
       uses: actions/checkout@v3
+
     - name: Analyze and update
-      run: npx @zeroheight/adoption-cli analyze --interactive false --repo-name ${{ github.event.repository.name }}
+      if: ${{ inputs.command == 'analyze' }}
+      run: npx @zeroheight/adoption-cli analyze --interactive false --repo-name ${{ github.event.repository.name }} ${{ inputs.arguments }}
+      shell: bash
+
+    - name: Track package
+      if: ${{ inputs.command == 'track-package' }}
+      run: npx @zeroheight/adoption-cli track-package --interactive false ${{ inputs.arguments }}
+      shell: bash
+
+    - name: Monitor repo
+      if: ${{ inputs.command == 'monitor-repo' }}
+      run: npx @zeroheight/adoption-cli monitor-repo ${{ inputs.arguments }}
       shell: bash
