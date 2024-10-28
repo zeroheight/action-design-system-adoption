@@ -30,15 +30,30 @@
 3. Follow the "Use the CLI" flow to create a Client ID and Access Token and ensure to note these down for future use
 4. Now head over to your application's source code on GitHub and enter your zeroheight Client ID and Access Token as GitHub repository secrets (Settings → Secrets and variables → Actions) using `ZEROHEIGHT_CLIENT_ID` and `ZEROHEIGHT_ACCESS_TOKEN` respectively
 5. Once completed you can use the action as part of your GitHub Action workflow file
+6. Once your workflow is updated, trigger your action, and check in zeroheight to see design system usage data come in 🎉
 
 ## Usage
+
+### Basic usage
 
 ```yaml
   - name: Analyze design system adoption data
     uses: zh-ski/action-design-system-adoption@v2
     with:
-      command: 'analyze' # or track-package, monitor-repo
-      arguments: '--ignore "**/*.spec.*"' # optionally supply additional arguments
+      command: 'track-package'
+    env:
+      ZEROHEIGHT_CLIENT_ID: "${{ secrets.ZEROHEIGHT_CLIENT_ID }}"
+      ZEROHEIGHT_ACCESS_TOKEN: "${{ secrets.ZEROHEIGHT_ACCESS_TOKEN }}"
+```
+
+### Supplying additional arguments
+
+```yaml
+  - name: Track package version
+    uses: zh-ski/action-design-system-adoption@v2
+    with:
+      command: 'analyze'
+      arguments: '--ignore "**/*.spec.*'
     env:
       ZEROHEIGHT_CLIENT_ID: "${{ secrets.ZEROHEIGHT_CLIENT_ID }}"
       ZEROHEIGHT_ACCESS_TOKEN: "${{ secrets.ZEROHEIGHT_ACCESS_TOKEN }}"
