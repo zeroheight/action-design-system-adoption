@@ -14,6 +14,7 @@ inputs:
       - 'analyze'
       - 'track-package'
       - 'monitor-repo'
+
   arguments:
     description: 'Additional arguments to pass to the command'
     required: false
@@ -22,6 +23,20 @@ inputs:
 runs:
   using: 'composite'
   steps:
+    - name: Validate command
+      run: |
+        # if command is blank
+        if [[ -z "${{ inputs.command }}" ]]; then
+          echo "::error::Command is required"
+          exit 1
+        fi
+
+        if [[ ! "${{ inputs.command }}" =~ ^(analyze|track-package|monitor-repo)$ ]]; then
+          echo "::error::Invalid command. Must be one of: analyze, track-package, monitor-repo"
+          exit 1
+        fi
+      shell: bash
+
     - name: Setup Node
       uses: actions/setup-node@v4
       with:
