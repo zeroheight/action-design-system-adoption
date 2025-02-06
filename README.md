@@ -38,7 +38,7 @@
 
 ```yaml
   - name: Analyze design system adoption data
-    uses: zh-ski/action-design-system-adoption@v2
+    uses: zeroheight/action-design-system-adoption@v2
     with:
       command: 'track-package'
     env:
@@ -50,7 +50,7 @@
 
 ```yaml
   - name: Track package version
-    uses: zh-ski/action-design-system-adoption@v2
+    uses: zeroheight/action-design-system-adoption@v2
     with:
       command: 'analyze'
       arguments: '--ignore "**/*.spec.*'
