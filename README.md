@@ -53,7 +53,7 @@
     uses: zeroheight/action-design-system-adoption@v2
     with:
       command: 'analyze'
-      arguments: '--ignore "**/*.spec.*'
+      arguments: '--ignore "**/*.spec.*"'
     env:
       ZEROHEIGHT_CLIENT_ID: "${{ secrets.ZEROHEIGHT_CLIENT_ID }}"
       ZEROHEIGHT_ACCESS_TOKEN: "${{ secrets.ZEROHEIGHT_ACCESS_TOKEN }}"
