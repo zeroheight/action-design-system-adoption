@@ -29,7 +29,7 @@
 2. Follow the "Use the CLI" flow to create a Client ID and Access Token and ensure you note these down for future use
 3. Now head over to your application's source code on GitHub and enter your zeroheight Client ID and Access Token as GitHub repository secrets (Settings → Secrets and variables → Actions) using `ZEROHEIGHT_CLIENT_ID` and `ZEROHEIGHT_ACCESS_TOKEN` respectively
 4. Once completed you can use the action as part of your GitHub Action workflow file
-5. Once your workflow is updated, trigger your action, and check in zeroheight to see design system usage data come in 🎉
+5. Once your workflow is updated, trigger your action, and check in [zeroheight](https://zeroheight.com/adoption) to see design system usage data come in 🎉
 
 ## Usage
 
