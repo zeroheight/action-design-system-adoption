@@ -86,4 +86,4 @@ See the [CLI documentation](https://www.npmjs.com/package/@zeroheight/adoption-c
 
 ## Example
 
-**Check out [our example React application](https://github.com/zeroheight-demos/example-airorange-app) for reference and [it's containing GitHub Action file](https://github.com/zeroheight-demos/example-airorange-app/blob/master/.github/workflows/deploy.yaml).**
+**Check out [our example React application](https://github.com/zeroheight-demos/example-airorange-app) for reference and [its containing GitHub Action file](https://github.com/zeroheight-demos/example-airorange-app/blob/master/.github/workflows/deploy.yaml).**
