@@ -16,9 +16,7 @@
 
 **Learn more about zeroheight's design system adoption features, such as [component usage tracking](https://zeroheight.com/help/article/component-usage/), [color usage](https://zeroheight.com/help/article/measure-color-usage/), and [package monitoring](https://zeroheight.com/help/article/package-version-monitoring/), in [our learning hub](https://zeroheight.com/help/article/adoption-private-beta-overview/#experimental-features) or check out the linked video below.**
 
-<p align="center">
-[<img src="https://img.youtube.com/vi/U7Lp2iVIs7k/maxresdefault.jpg" width="50%" alt="YouTube video"/>](https://youtu.be/1Sx2ChrFlZw)
-</p>
+[<img src="https://img.youtube.com/vi/U7Lp2iVIs7k/maxresdefault.jpg" alt="YouTube video"/>](https://youtu.be/1Sx2ChrFlZw)
 
 ---
 
