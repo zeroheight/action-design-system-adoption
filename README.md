@@ -28,7 +28,7 @@
 > This action presumes you already have a zeroheight account. You can [sign up here](https://zeroheight.com/create/account?utm_department=marketing&utm_source=github).
 
 1. Head to [`zeroheight.com/adoption`](https://zeroheight.com/adoption) and follow the steps to connect your design system packages and application source code to zeroheight
-2. Follow the "Use the CLI" flow to create a Client ID and Access Token and ensure to note these down for future use
+2. Follow the "Use the CLI" flow to create a Client ID and Access Token and ensure you note these down for future use
 3. Now head over to your application's source code on GitHub and enter your zeroheight Client ID and Access Token as GitHub repository secrets (Settings → Secrets and variables → Actions) using `ZEROHEIGHT_CLIENT_ID` and `ZEROHEIGHT_ACCESS_TOKEN` respectively
 4. Once completed you can use the action as part of your GitHub Action workflow file
 5. Once your workflow is updated, trigger your action, and check in zeroheight to see design system usage data come in 🎉
